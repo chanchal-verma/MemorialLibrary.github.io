@@ -7,7 +7,7 @@
 body
 {
     min-height:100vh ;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     /* background:#16001b!important; */
     /* background: linear-gradient(rgba(216, 203, 203, 0.596),rgba(216, 203, 203, 0.596)), url('../Images/bg1.jpg')center/cover no-repeat fixed; */
 }
@@ -206,10 +206,10 @@ body
 @media (max-width:991px)
 {
     #logo span,#logo-2 span{
-        font-size: 35px!important;
+        font-size: 42px!important;
     }
     #banner,#banner-2,#banner-3{
-        min-height: 150vh!important;
+        min-height: 105vh!important;
     }
     #mainHeading,#head-content{
         position: relative!important;
@@ -217,14 +217,19 @@ body
         top: 11vh!important;
     }
     #bannerImg{
-        margin-top: 100px!important;
+        margin-top: 40px!important;
         margin-right: 130px!important;
+        height: 40vh!important;
     }
     #bannerImg-2,#bannerImg-3 {
         margin-right: 130px!important;
+        height: 35vh!important;
     }
     #banner:before,#banner-2:before,#banner-3:before{
         display: none!important;
+    }
+    .table{
+        margin-bottom: 30vh!important;
     }
     
 }
@@ -232,10 +237,18 @@ body
 {
     #logo span,#logo-2 span{
         position: relative!important;
-        font-size: 30px!important;
+        font-size: 42px!important;
     }
-    #banner,#banner-2,#banner-3{
-        min-height: 135vh!important;
+    #banner{
+        min-height: 115vh!important;
+    }
+    #banner-2{
+        min-height: 125vh!important;
+
+    }
+    #banner-3
+    {
+        min-height: 136vh!important;
     }
     #mainHeading,#head-content{
         position: relative!important;
@@ -254,6 +267,9 @@ body
         display: none!important;
     }
 
+    #mainHeading h1 ,#head-content h1{
+        font-size: 25px!important;
+    }
 }
 
 
@@ -399,13 +415,16 @@ body
   @media (max-width:991px)
 {
     #cards{
-        top: 160vh;
+        top: 113vh;
     }
 }
 @media (max-width:600px)
 {
     #cards{
-        top: 145vh;
+        top: 150vh!important;
+    }
+    #footer .logo,#footer .libName{
+        font-size: 25px!important;
     }
 }
 
@@ -418,13 +437,22 @@ body
 @media (max-width:996px)
 {
     #issueBook{
-        top:170vh ;
+        top:113vh ;
+    }
+    #footer{
+        top: 100vh!important;
+    }
+    #About-Me{
+        text-align: center!important;
+    }
+    #About-Me .myPic {
+        left: 0vw!important;
     }
 }
 @media (max-width:600px)
 {
     #issueBook{
-        top: 150vh;
+        top: 150vh!important;
     }
 }
 
@@ -443,6 +471,7 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     font-size:40px;
     color: white;
     font-family: 'Cinzel Decorative', cursive!important;

@@ -132,7 +132,7 @@ body
 
 
 
-#banner{
+/* #banner{
     overflow: hidden;
     min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../Images/Home.jpg')center/cover no-repeat fixed;
@@ -313,7 +313,7 @@ svg:not(:root).svg-inline--fa {
         display: none!important;
     }
 
-}
+} */
 
 
 
@@ -936,4 +936,216 @@ svg circle:nth-child(2){
 .form-control:focus,.custom-select:focus{
     background-color: #24b1ed!important;
     color: black!important;
+}
+
+
+
+
+
+.banner{
+    overflow: hidden;
+    /* min-height: 100vh; */
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/Home.jpg)center/cover no-repeat fixed;
+}
+.bannerAbout{
+    overflow: hidden;
+    /* min-height: 100vh; */
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/about.jpg)center/cover no-repeat fixed;
+}
+.bannerNotes{
+    overflow: hidden;
+    /* min-height: 100vh; */
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../Images/Notes1.jpg)center/cover no-repeat fixed;
+}
+.banner ,.bannerAbout ,.bannerNotes{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.banner:before , .bannerAbout:before ,.bannerNotes:before{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+#logo
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Cinzel Decorative', cursive!important;
+
+}
+#logo{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#logo a{
+    font-size: 20px;
+    color: white!important; 
+    padding: 10px 25px 20px 25px!important;
+}
+#logo a:hover{
+    color: #24b1ed!important;
+    text-decoration: none;
+    border-top: 3px solid #24b1ed;
+}
+#logo a.active{
+    color: #24b1ed!important;
+    text-decoration: none;
+    border-top: 3px solid #24b1ed;
+}
+#logo span{
+    font-size: 3rem!important;
+    color: white!important;
+    font-family: 'Cinzel Decorative', cursive!important;
+}
+svg:not(:root).svg-inline--fa {
+    color: #24b1ed!important;
+}
+.banner .Imagebox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* opacity: 0.1; */
+    background-image: url(../Images/Home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bannerAbout .AboutImagebox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* opacity: 0.1; */
+    background-image: url(../Images/about.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bannerNotes .NotesImagebox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* opacity: 0.1; */
+    background-image: url(../Images/Notes1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.banner .mainHeading ,.bannerAbout .mainHeading ,.bannerNotes .mainHeading  {
+    position: relative;
+    max-width: 550px;
+    z-index:2;
+}
+.banner .mainHeading h1,.bannerAbout .mainHeading h1,.bannerNotes .mainHeading h1{
+    color: #fff;
+    font-size: 3em;
+}
+.banner .mainHeading p,.bannerAbout .mainHeading p,.bannerNotes .mainHeading p{
+    color: #fff;
+    font-size: 1.1em;
+    margin:5px 0px 25px ;
+}
+.banner .mainHeading a,.bannerAbout .mainHeading a,.bannerNotes .mainHeading a{
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    color:  #111;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.banner .bannerImg,.bannerAbout .bannerImgAbout,.bannerNotes .bannerImgNotes{
+    position: relative;
+    background: #fff;
+    margin-left: 40px;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+}
+.banner .sci,.bannerAbout .sci,.bannerNotes .sci{
+    position: absolute;
+    bottom: 20px;
+    letter-spacing: 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+.banner .sci li,.bannerAbout .sci li,.bannerNotes .sci li{
+    list-style: none;
+}
+.banner .sci li a,.bannerAbout .sci li a,.bannerNotes .sci li a{
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 23px;
+}
+.collapse{
+    transition: all 0s ease -3s ;
+}
+/* .banner .sci li a img{
+    transform: scale(0.5) ;
+    filter: invert();
+} */
+@media (max-width:991px)
+{
+    header{
+        padding: 20px 50px;
+    }
+    .banner,.bannerAbout,.bannerNotes{
+        padding: 150px 50px 0;
+        flex-direction: column;
+    }
+    .banner:before,.bannerAbout:before,.bannerNotes:before{
+        display: none;
+    }
+    .banner .mainHeading ,.bannerAbout .mainHeading ,.bannerNotes .mainHeading {
+        max-width: 100%;
+    }
+
+    .banner .mainHeading h1 ,.bannerAbout .mainHeading h1 ,.bannerNotes .mainHeading h1{
+        font-size: 2.5em;
+    }
+    .banner .bannerImg,.bannerAbout .bannerImgAbout,.bannerNotes .bannerImgNotes
+    {
+        width: 100%;
+        height: 200px;
+        margin: 40px 0 100px;
+    }
+    .banner .sci,.bannerAbout .sci,.bannerNotes .sci{
+        left: 50px;
+
+    }
+    .collapse{
+        background: black;
+        transition: all 0s ease -3s ;
+    }
+}
+
+
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+    overflow: hidden!important;
 }
